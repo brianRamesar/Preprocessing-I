@@ -89,6 +89,7 @@ video {
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
+  scroll-behavior: smooth;
 }
 /* HTML5 display-role reset for older browsers */
 article,
@@ -123,6 +124,11 @@ body .mainNav a {
 }
 body .mainNav a:hover {
   color: grey;
+}
+@media (max-width: 500px) {
+  body .mainNav a {
+    font-size: 0.9rem;
+  }
 }
 body .mainSec {
   display: flex;
@@ -168,6 +174,15 @@ body .mainSec .leftContent .secondEdu {
   height: 50%;
   padding-top: 4%;
   padding-bottom: 4%;
+}
+@media (max-width: 500px) {
+  body .mainSec .leftContent {
+    font-size: 0.7rem;
+    height: 25%;
+  }
+  body .mainSec .leftContent h2 {
+    font-size: 1rem;
+  }
 }
 body .mainSec .rightContent {
   width: 70%;
@@ -217,9 +232,62 @@ body .skillSec h3 {
   margin-top: 2%;
   margin-bottom: 2%;
 }
+@media (max-width: 500px) {
+  body .skillSec {
+    height: 50%;
+  }
+}
 body .workExp {
   display: flex;
   flex-direction: column;
+  height: 100vh;
+  padding-top: 20%;
+  padding-right: 10%;
+}
+body .workExp h2 {
+  display: flex;
+  justify-content: center;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  font-size: 2rem;
+  font-family: 'Oswald', sans-serif;
+}
+body .workExp h3 {
+  font-size: 1.3rem;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+body .workExp div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+body .workExp div p {
+  font-family: 'Comic Neue', cursive;
+  line-height: 1.5rem;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  border-bottom: 1px dashed #2b2b2b;
+}
+@media (max-width: 500px) {
+  body .workExp {
+    height: 50%;
+    padding-left: 5%;
+  }
+}
+body footer {
+  height: 6vh;
+  background-color: #313131;
+  display: flex;
+  justify-content: space-evenly;
+}
+body footer img {
+  color: white;
+}
+@media (max-width: 500px) {
+  body footer {
+    justify-content: space-around;
+  }
 }
 ol,
 ul {

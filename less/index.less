@@ -23,6 +23,7 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+	scroll-behavior: smooth;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -82,7 +83,12 @@ body {
 			&:hover{
 				color: grey;
 			}
+
+			@media(max-width: 500px){
+				font-size: .9rem;
+			}
 		}
+
 	}
 
 	.mainSec{
@@ -123,6 +129,15 @@ body {
 				width: 100%;
 				align-items: flex-start;
 				.educationCont-positioning()
+			}
+
+			@media(max-width: 500px){
+				font-size: .7rem;
+				height: 25%;
+
+				h2{
+					font-size: 1rem;
+				}
 			}
 		}
 	
@@ -174,11 +189,60 @@ body {
 		h3{
 			.h3Stylings()
 		}
+
+		@media(max-width: 500px){
+			height: 50%;
+		}
 	}
 
 	.workExp{
 		display: flex;
 		flex-direction: column;
+		height: 100vh;
+		padding-top: 20%;
+		padding-right: 10%;
+
+		h2{
+			display: flex;
+			justify-content: center;
+			padding-top: 2%;
+			padding-bottom: 2%;
+			.headingTwoStyles()
+		}
+
+		h3{
+			.h3Stylings()
+		}
+
+		div{
+			display: flex;
+			flex-direction: column;
+			align-items: flex-end;
+
+			p{
+				.pStylings()
+			}
+		}
+
+		@media(max-width: 500px){
+			height: 50%;
+			padding-left: 5%;
+		}
+	}
+
+	footer{
+		height: 6vh;
+		background-color: @nav-background;
+		display: flex;
+		justify-content: space-evenly;
+
+		img{
+			color:white;
+		}
+
+		@media(max-width: 500px){
+			justify-content: space-around;
+		}
 	}
 
 
