@@ -115,6 +115,8 @@ body .mainNav {
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
+  position: sticky;
+  top: 0;
 }
 body .mainNav a {
   margin-right: 2%;
