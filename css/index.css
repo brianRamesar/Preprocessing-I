@@ -117,9 +117,54 @@ body .mainNav {
 }
 body .mainNav a {
   margin-right: 2%;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   text-decoration: none;
   color: white;
+}
+body .mainNav a:hover {
+  color: grey;
+}
+body .mainSec {
+  display: flex;
+}
+body .mainSec .leftContent {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  padding-left: 2%;
+  padding-right: 2%;
+  padding-top: 4%;
+  height: 100vh;
+  width: 30%;
+  background-color: #838383;
+  color: white;
+}
+body .mainSec .leftContent h2 {
+  font-size: 2rem;
+}
+body .mainSec .leftContent h3 {
+  font-size: 1.3rem;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+body .mainSec .leftContent p {
+  margin-top: 2%;
+  margin-bottom: 2%;
+  border-bottom: 1px dashed #2b2b2b;
+}
+body .mainSec .leftContent .firstEdu {
+  width: 100%;
+  align-items: flex-start;
+  height: 50%;
+  padding-top: 4%;
+  padding-bottom: 4%;
+}
+body .mainSec .leftContent .secondEdu {
+  width: 100%;
+  align-items: flex-start;
+  height: 50%;
+  padding-top: 4%;
+  padding-bottom: 4%;
 }
 ol,
 ul {
