@@ -1,1 +1,323 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  scroll-behavior: smooth;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+body .mainNav {
+  width: 100%;
+  height: 10vh;
+  background-color: #313131;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  position: sticky;
+  top: 0;
+}
+body .mainNav a {
+  margin-right: 2%;
+  font-size: 1.4rem;
+  text-decoration: none;
+  color: white;
+}
+body .mainNav a:hover {
+  color: grey;
+}
+@media (max-width: 500px) {
+  body .mainNav a {
+    font-size: 0.9rem;
+  }
+}
+body .mainSec {
+  display: flex;
+}
+body .mainSec .leftContent {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  padding-left: 2%;
+  padding-right: 2%;
+  padding-top: 4%;
+  height: 100vh;
+  width: 30%;
+  background-color: #838383;
+  color: white;
+}
+body .mainSec .leftContent h2 {
+  font-size: 2rem;
+  font-family: 'Oswald', sans-serif;
+}
+body .mainSec .leftContent h3 {
+  font-size: 1.3rem;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+body .mainSec .leftContent p {
+  font-family: 'Comic Neue', cursive;
+  line-height: 1.5rem;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  border-bottom: 1px dashed #2b2b2b;
+}
+body .mainSec .leftContent .firstEdu {
+  width: 100%;
+  align-items: flex-start;
+  height: 50%;
+  padding-top: 4%;
+  padding-bottom: 4%;
+}
+body .mainSec .leftContent .secondEdu {
+  width: 100%;
+  align-items: flex-start;
+  height: 50%;
+  padding-top: 4%;
+  padding-bottom: 4%;
+}
+@media (max-width: 500px) {
+  body .mainSec .leftContent {
+    font-size: 0.7rem;
+    height: 25%;
+  }
+  body .mainSec .leftContent h2 {
+    font-size: 1rem;
+  }
+}
+body .mainSec .rightContent {
+  width: 70%;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10%;
+}
+body .mainSec .rightContent h2 {
+  margin-bottom: 4%;
+  font-size: 2rem;
+  font-family: 'Oswald', sans-serif;
+}
+body .mainSec .rightContent p {
+  font-family: 'Comic Neue', cursive;
+  line-height: 1.5rem;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  border-bottom: 1px dashed #2b2b2b;
+}
+body .mainSec .rightContent .contactInfo {
+  padding-top: 5%;
+}
+body .skillSec {
+  background-color: #242424;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  height: 100vh;
+  padding-top: 20%;
+  padding-left: 5%;
+  padding-right: 5%;
+  color: white;
+}
+body .skillSec h2 {
+  display: flex;
+  justify-content: center;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  font-size: 2rem;
+  font-family: 'Oswald', sans-serif;
+}
+body .skillSec .skills {
+  width: 100%;
+}
+body .skillSec h3 {
+  font-size: 1.3rem;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+@media (max-width: 500px) {
+  body .skillSec {
+    height: 50%;
+  }
+}
+body .workExp {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  padding-top: 20%;
+  padding-right: 10%;
+}
+body .workExp h2 {
+  display: flex;
+  justify-content: center;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  font-size: 2rem;
+  font-family: 'Oswald', sans-serif;
+}
+body .workExp h3 {
+  font-size: 1.3rem;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+body .workExp div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+body .workExp div p {
+  font-family: 'Comic Neue', cursive;
+  line-height: 1.5rem;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  border-bottom: 1px dashed #2b2b2b;
+}
+@media (max-width: 500px) {
+  body .workExp {
+    height: 50%;
+    padding-left: 5%;
+  }
+}
+body footer {
+  height: 6vh;
+  background-color: #313131;
+  display: flex;
+  justify-content: space-evenly;
+}
+body footer img {
+  color: white;
+}
+@media (max-width: 500px) {
+  body footer {
+    justify-content: space-around;
+  }
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
