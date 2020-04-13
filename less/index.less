@@ -29,8 +29,29 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+
+@nav-color: white;
+@nav-background: rgb(49, 49, 49);
+
 body {
 	line-height: 1;
+
+	.mainNav{
+		width: 100%;
+		height: 10vh;
+		background-color: @nav-background;
+		display: flex;
+		flex-direction: row-reverse;
+		align-items: center;
+
+		a{
+			margin-right: 2%;
+			font-size: 1.6rem;
+			text-decoration: none;
+			color: @nav-color;
+		}
+	}
+
 }
 ol, ul {
 	list-style: none;
